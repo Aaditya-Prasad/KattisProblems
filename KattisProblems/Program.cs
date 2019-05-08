@@ -8,18 +8,19 @@ namespace KattisProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Qbf.Run();
         }
     }
     class Qbf
     {
-        public static void run()
+        public static void Run()
         {
             string x = Console.ReadLine();
             int num = Int32.Parse(x);
             int i, id;
             string[] r = new string[num];
             ArrayList al = new ArrayList(26);
+  
             al.Add('a');
             al.Add('b');
             al.Add('c');
