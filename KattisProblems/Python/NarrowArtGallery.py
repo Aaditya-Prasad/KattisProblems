@@ -1,15 +1,30 @@
 class narrowartgallery:
+
+    @staticmethod
+    def nextto(a, b, c):
+        x, y = c.index(a), c.index(b) #finding the rooms
+        
+    @staticmethod
     def nag():
         while(True):
             inp = input().split();
-            inp = map(int, inp);
+            inp = list(map(int, inp));
             if inp[0] == 0 and inp[1] == 0:
                 break;
-            temp = [];
+            rooms = [[], []]; #left is 0, right is 1
+            blocked = [];
             for i in range(inp[0]):
                 inpp = input().split();
-                inpp = map(int, inpp);
-                temp[0].append(inpp[0]);
-                temp[1].append(inpp[1]);
+                inpp = list(map(int, inpp));
+                rooms[0].append(inpp[0]);
+                rooms[1].append(inpp[1]);
+            val = sum(map(sum, rooms));
 
-print("Hello World");
+            for i in range(inp[1]):
+                minn = min([min(r) for r in rooms]);
+                for b in blocked:
+                    if b
+
+
+
+narrowartgallery.nag();
