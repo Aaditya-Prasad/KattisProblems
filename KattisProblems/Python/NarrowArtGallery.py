@@ -3,7 +3,7 @@ class narrowartgallery:
     @staticmethod
     def nextto(a, b, c):
         x, y = c.index(a), c.index(b) #finding the rooms
-        
+
     @staticmethod
     def nag():
         while(True):
